@@ -1,0 +1,33 @@
+digraph mcu {
+    {
+        node [shape=plaintext, fontsize=16, ];
+        2008 -> 2009 -> 2010 -> 2011 -> 2012 -> 2013 -> 2014 -> 2015 -> 2016 -> 2017 -> 2018 -> 2019 -> 2020;
+    }
+    node [shape="box", margin="0.3"];
+    { rank = same; "2008"; Iron_Man [label="Iron Man"] ; Hulk [label="The Incredible Hulk"]; }
+    { rank = same; "2010"; Iron_Man_2 [label="Iron Man 2"]; }
+    { rank = same; "2011";  Thor [label="Thor"]; Captain_America [label="Captain America:\nThe First Avenger"] }
+    { rank = same; "2012";  Avengers [label="Marvel's The Avengers"]; }
+    { rank = same; "2013";  Iron_Man_3 [label="Iron Man 3"]; Thor_2 [label="Thor: The Dark World"] }
+    { rank = same; "2014";  Captain_America_2 [ label="Captain America:\nThe Winter Soldier"]; GotG [label="Guardians of the Galaxy"] }
+    { rank = same; "2015";  Avengers_2 [label="Avengers: Age of Ultron"]; Ant_Man [label="Ant-Man"]; }
+    { rank = same; "2016";  Captain_America_3 [label="Captain America: Civil War"]; Doctor_Strange [label="Doctor Strange"] }
+    { rank = same; "2017";  GotG_2 [label="Guardians of the Galaxy Vol. 2"]; Spider_Man [label="Spider-Man: Homecomming"]; Thor_3 [label="Thor: Ragnarok"];}
+    { rank = same; "2018";  Black_Panther [label="Black Panther"]; Avengers_3 [label="Avengers: Infinity War"]; Ant_Man_2 [label="Ant-Man and the Wasp"]; Captain_Marvel [label="Captain Marvel"]; }
+    /*
+    { rank = same; "";  [label=""]; }
+    */
+    {
+        Iron_Man -> Iron_Man_2;
+        Iron_Man -> Hulk [style=dotted]
+        /*Iron_Man_2 -> Iron_Man_3;*/
+        Iron_Man_2 -> Thor [style=dotted];
+        Iron_Man_2 -> Avengers;
+        Thor -> Avengers;
+        Captain_America -> Avengers;
+        Avengers -> Iron_Man_3;
+        Avengers -> Thor_2;
+        Avengers -> Captain_America_2;
+        Iron_Man_3 -> Avengers_2;
+    }
+}
